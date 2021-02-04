@@ -1,16 +1,16 @@
 import React from 'react';
 import { Header, Content } from './layouts';
-import { ProjectsProvider, SelectedProjectProvider } from './contexts';
+import { ProjectsProvider, SelectedProjectsProvider } from './contexts';
 
 export function App() {
   return (
-    <SelectedProjectProvider>
+    <SelectedProjectsProvider>
       <ProjectsProvider>
         <div className="App">
           <Header />
           <Content />
         </div>
       </ProjectsProvider>
-    </SelectedProjectProvider>
+    </SelectedProjectsProvider>
   );
 }
