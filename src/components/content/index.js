@@ -1,10 +1,11 @@
 import React from 'react';
-import { Sidebar } from '../';
+import { Sidebar, Tasks } from '../';
 
 export function Content() {
   return (
     <section>
       <Sidebar />
+      <Tasks />
     </section>
   );
 }

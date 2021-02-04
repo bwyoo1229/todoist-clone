@@ -3,7 +3,7 @@ import { FaPizzaSlice } from 'react-icons/fa';
 
 export function Header() {
   return (
-    <header classNmae="header">
+    <header className="header">
       <nav>
         <div className="logo">
           <img src="/images/logo.png" alt="Todoist" />
