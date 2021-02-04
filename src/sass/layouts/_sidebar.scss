@@ -4,8 +4,8 @@
   height: calc(100vh);
   padding-top: 74px;
   position: fixed;
-  overlay-x: hidden;
-  overlay-y: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   border-right: $generic-border;
   background: #fafafa;
 
@@ -18,35 +18,35 @@
     padding-right: 15px;
 
     &:hover .sidebar__project-delete {
-      display: block;
+      display: flex;
     }
+  }
 
-    &__project {
-      padding: 5px 0;
-      cursor: pointer;
+  &__project {
+    padding: 5px 0;
+    cursor: pointer;
 
-      &-delete {
-        margin-left: auto;
-        display: none;
+    &-delete {
+      margin-left: auto;
+      display: none;
 
-        svg {
-          color: #cacaca;
-        }
-      }
-      &.active,
-      &:hover {
-        font-weight: bold;
-        background: white;
-      }
-
-      &.sidebar__dot {
-        color: #ff8d85;
+      svg {
+        color: #cacaca;
       }
     }
-
-    &__projects {
-      padding-left: 3px;
+    &.active,
+    &:hover {
+      font-weight: bold;
+      background: white;
     }
+
+    & > .sidebar__dot {
+      color: #ff8d85;
+    }
+  }
+
+  &__projects {
+    padding-left: 3px;
   }
 
   &__project {
