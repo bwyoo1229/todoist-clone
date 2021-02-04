@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
+import { SelectedProjectsContext } from '../contexts';
+import { Projects } from '../components';
 import {
   FaChevronDown,
   FaInbox,
@@ -7,6 +9,10 @@ import {
 } from 'react-icons/fa';
 
 export function Sidebar() {
+  const { setSelectedProejcts } = useContext(SelectedProjectsContext);
+  const [active, setActive] = useState('inbox');
+  const [showProjects, setShowProjects] = useState(true);
+
   return (
     <div className="sidebar">
       <ul className="sidebar__generic">
@@ -35,8 +41,7 @@ export function Sidebar() {
         </span>
         <h2>Projects</h2>
       </div>
-      <ul className="sidebar__projects">Projects will be here!</ul>
-      Add Project Component Here!
+      <ul className="sidebar__projects">{showProjects && <Projects />}</ul>
     </div>
   );
 }
