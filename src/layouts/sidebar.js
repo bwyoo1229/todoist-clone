@@ -10,19 +10,19 @@ export function Sidebar() {
   return (
     <div className="sidebar">
       <ul className="sidebar__generic">
-        <li>
+        <li className="inbox">
           <span>
             <FaInbox />
           </span>
           <span>Inbox</span>
         </li>
-        <li>
+        <li className="today">
           <span>
             <FaRegCalendar />
           </span>
           <span>Today</span>
         </li>
-        <li>
+        <li className="next-7-days">
           <span>
             <FaRegCalendarAlt />
           </span>
