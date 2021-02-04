@@ -1,5 +1,6 @@
 import React from 'react';
-import { Sidebar, Tasks } from '../';
+import { Sidebar } from '.';
+import { Tasks } from '../components';
 
 export function Content() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { firebase } from '../../libs/firebase';
+import { firebase } from '../libs/firebase';
 
 export function Checkbox({ id }) {
   const archiveTask = () => {
