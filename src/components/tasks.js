@@ -4,6 +4,7 @@ import { useTasks } from '../hooks';
 import { collatedTasks } from '../constants';
 import { SelectedProjectsContext, ProjectsContext } from '../contexts';
 import { getCollatedTasks, getTitle, getCollatedTitle } from '../helpers';
+import { AddTask } from '.';
 
 export function Tasks() {
   const { selectedProjects } = useContext(SelectedProjectsContext);
@@ -35,6 +36,7 @@ export function Tasks() {
           </li>
         ))}
       </ul>
+      <AddTask />
     </div>
   );
 }
