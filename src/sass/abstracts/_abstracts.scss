@@ -84,3 +84,17 @@ $generic-bg: #db4c3f;
     @content;
   }
 }
+
+@mixin add() {
+  &__plus {
+    color: #dd4b39;
+    font-size: 18px;
+  }
+
+  &__text {
+    display: inline-block;
+    color: #545454;
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}
