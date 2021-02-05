@@ -31,11 +31,13 @@ export function IndividualProject({ project }) {
         <FaTrashAlt />
         {showConfirm && (
           <div className="project-delete-modal">
-            <p>Are you sure you want to delete this project?</p>
-            <button onClick={() => deleteProject(project.docId)}>
-              Delete
+            <div className="project-delete-modal__inner">
+              <p>Are you sure you want to delete this project?</p>
+              <button onClick={() => deleteProject(project.docId)}>
+                Delete
+              </button>
               <span onClick={() => setShowConfirm(!showConfirm)}>Cancel</span>
-            </button>
+            </div>
           </div>
         )}
       </span>
