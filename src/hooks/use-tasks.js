@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { firebase } from '../libs/firebase';
-import { isCollatedTasks } from '../helpers';
+import { getCollatedTasks } from '../helpers';
 import moment from 'moment';
 
 function isProjectIdNotCollatedTasks(projectId) {
-  if (projectId && !isCollatedTasks(projectId)) {
+  if (projectId && !getCollatedTasks(projectId)) {
     return true;
   }
 }
