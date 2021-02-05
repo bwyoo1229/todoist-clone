@@ -4,7 +4,7 @@ import { Tasks } from '../components';
 
 export function Content() {
   return (
-    <section>
+    <section className="content">
       <Sidebar />
       <Tasks />
     </section>
