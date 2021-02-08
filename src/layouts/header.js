@@ -14,7 +14,7 @@ export function Header({ darkMode, setDarkMode, showSidebar, setShowSidebar }) {
             <FaBars />
           </div>
           <div className="logo">
-            <img src="/images/logo.png" alt="Todoist" />
+            <img src="../images/logo.png" alt="Todoist" />
           </div>
         </div>
         <div className="settings">
