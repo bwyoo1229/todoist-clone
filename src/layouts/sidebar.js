@@ -8,13 +8,13 @@ import {
   FaRegCalendar,
 } from 'react-icons/fa';
 
-export function Sidebar() {
+export function Sidebar({ showSidebar }) {
   const { setSelectedProjects } = useContext(SelectedProjectsContext);
   const [active, setActive] = useState('inbox');
   const [showProjects, setShowProjects] = useState(true);
 
   return (
-    <div className="sidebar">
+    <div className={showSidebar ? 'sidebar' : 'sidebar hide'}>
       <ul className="sidebar__generic">
         <li
           className={active === 'inbox' ? 'active' : undefined}
