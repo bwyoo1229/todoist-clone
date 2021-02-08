@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { Checkbox } from '.';
 import { useTasks } from '../hooks';
 import { collatedTasks } from '../constants';
@@ -14,16 +14,14 @@ export function Tasks() {
   let projectName = '';
 
   if (projects && selectedProjects && !getCollatedTasks(selectedProjects)) {
-    projectName = getTitle(projects, selectedProjects).name;
+    projectName =
+      getTitle(projects, selectedProjects) &&
+      getTitle(projects, selectedProjects).name;
   }
 
   if (getCollatedTasks(selectedProjects) && selectedProjects) {
     projectName = getCollatedTitle(collatedTasks, selectedProjects).name;
   }
-
-  useEffect(() => {
-    document.title = `${projectName}: Todosit`;
-  });
 
   return (
     <div className="tasks">

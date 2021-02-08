@@ -65,7 +65,6 @@ export function AddTask({
           <span className="add-task__text">Add Task</span>
         </div>
       )}
-
       {(showMain || showQuickAddTask) && (
         <div className="add-task__main">
           {showQuickAddTask && (
@@ -101,7 +100,14 @@ export function AddTask({
             value={task}
             onChange={e => setTask(e.target.value)}
           />
-          <button className="add-task__submit" onClick={() => addTask()}>
+          <button
+            className="add-task__submit"
+            onClick={() =>
+              showQuickAddTask
+                ? addTask() && setShowQuickAddTask(false)
+                : addTask()
+            }
+          >
             Add Task
           </button>
           {!showQuickAddTask && (
