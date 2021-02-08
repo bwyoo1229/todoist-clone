@@ -1,17 +1,16 @@
 .sidebar {
   @include no-select();
-  width: 266px;
+  width: 300px;
+  &.hide {
+    width: 0px;
+  }
+
   height: calc(100vh);
   padding-top: 74px;
-  position: fixed;
-  overflow-x: hidden;
-  overflow-y: hidden;
+
   border-right: $generic-border;
   background: #fafafa;
-
-  @include mq('900px') {
-    display: none;
-  }
+  transition: width 360ms ease-in;
 
   li {
     padding-left: 10px;
@@ -149,6 +148,7 @@
   padding-right: 20px;
   margin-top: 20px;
   cursor: pointer;
+  white-space: nowrap;
 
   &__input {
     margin-bottom: 20px;
@@ -161,6 +161,7 @@
     border-radius: 3px;
     height: 35px;
     padding: 0 10px;
+    display: block;
   }
 
   &__submit {

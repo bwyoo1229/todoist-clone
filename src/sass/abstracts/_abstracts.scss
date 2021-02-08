@@ -98,3 +98,17 @@ $generic-bg: #db4c3f;
     margin-left: 15px;
   }
 }
+
+@mixin darkadd() {
+  &__plus {
+    color: #545454;
+    font-size: 18px;
+  }
+
+  &__text {
+    display: inline-block;
+    color: lightgray;
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}

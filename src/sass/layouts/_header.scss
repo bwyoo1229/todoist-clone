@@ -30,12 +30,29 @@ header {
     }
 
     div {
-      &.logo {
-        padding-left: 8px;
+      &.features {
         grid-area: 1/1;
+        display: flex;
+        padding-left: 5px;
 
-        img {
-          width: 24px;
+        & .toggle {
+          @include va;
+          cursor: pointer;
+          color: white;
+          font-size: 28px;
+          margin-right: 30px;
+
+          &:hover {
+            border-radius: 3px;
+            background-color: rgba(255, 255, 255, 0.2);
+          }
+        }
+
+        & .logo {
+          img {
+            padding-top: 3px;
+            width: 24px;
+          }
         }
       }
 

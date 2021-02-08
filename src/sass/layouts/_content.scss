@@ -1,25 +1,23 @@
 // Main content
 .content {
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: 1fr;
   max-width: 922px;
   margin: auto;
 }
 
 .tasks {
-  width: 656px;
+  width: 100%;
   background: white;
-  margin-left: 266px;
   border-right: $generic-border;
   min-height: calc(100vh);
   vertical-align: top;
   padding: 80px 40px 84px;
 
-  @include mq('900px') {
-    margin-left: 0;
-    width: auto;
-  }
+  // @include mq('900px') {
+  //   margin-left: 0;
+  //   width: auto;
+  // }
 
   h2 {
     font-size: 20px;
@@ -80,9 +78,9 @@
     height: calc(100vh);
 
     .add-task__main {
-      @include mq('900px') {
-        width: 90%;
-      }
+      // @include mq('900px') {
+      //   width: 90%;
+      // }
 
       overflow: visible;
       margin-bottom: 20px;
