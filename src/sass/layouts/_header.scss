@@ -1,4 +1,5 @@
 header {
+  user-select: none;
   border-bottom: solid 1px #ca1200;
   background-color: $generic-bg;
   transition: height 200ms ease-in;
@@ -10,7 +11,7 @@ header {
   width: 100%;
 
   @include mq('900px') {
-    padding: 0 10px;
+    padding-right: 10px;
   }
 
   nav {

@@ -11,13 +11,13 @@
   section {
     .contents {
       background: gray;
-      color: white;
+      color: black;
     }
 
     .sidebar {
       background: gray;
-      color: whitesmoke;
-      border-right-color: darkgray;
+      color: black;
+      border-right-color: #282828;
 
       li {
         &.active,
@@ -27,20 +27,20 @@
       }
 
       &__middle {
-        border-bottom-color: darkgray;
+        border-bottom-color: #282828;
       }
 
       h2 {
-        color: whitesmoke;
+        color: black;
       }
 
       li {
         path {
-          color: whitesmoke;
+          color: black;
         }
 
         span {
-          color: whitesmoke;
+          color: black;
         }
       }
 
@@ -50,13 +50,17 @@
         &__submit {
           background-color: #282828;
         }
+
+        &__cancel {
+          color: lightgray;
+        }
       }
     }
 
     .tasks {
       background: gray;
-      color: whitesmoke;
-      border-right-color: darkgray;
+      color: black;
+      border-right-color: #282828;
 
       .add-task {
         @include darkadd();
@@ -64,6 +68,18 @@
         &__submit {
           background-color: #282828;
         }
+
+        &__cancel {
+          color: lightgray;
+        }
+      }
+
+      .checkbox {
+        border-color: #282828;
+      }
+
+      .tasks__list li {
+        border-bottom-color: #282828;
       }
     }
   }
@@ -71,6 +87,25 @@
   input {
     background-color: darkgray !important;
     color: whitesmoke;
-    border-color: gray;
+    border-color: #282828;
+  }
+
+  .add-task {
+    &__overlay {
+      background-color: rgba(10, 10, 10, 0.5);
+    }
+
+    .add-task__main {
+      background-color: gray;
+      color: whitesmoke;
+    }
+
+    .add-task__cancel-x {
+      color: whitesmoke;
+    }
+
+    &__submit {
+      background-color: #282828;
+    }
   }
 }
