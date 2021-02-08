@@ -21,7 +21,7 @@ export function AddTask({
   const { selectedProject } = useContext(SelectedProjectsContext);
 
   const addTask = () => {
-    const projectId = project || selectedProject;
+    const projectId = project || selectedProject || 'INBOX';
     let collatedDate = '';
 
     if (projectId === 'TODAY') {
