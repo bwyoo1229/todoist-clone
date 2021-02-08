@@ -10,7 +10,7 @@ export function TaskDate({ setTaskDate, showTaskDate, setShowTaskDate }) {
           <li
             onClick={() => {
               setShowTaskDate(false);
-              setTaskDate(moment().add(1, 'day').format('DD/MM/YYYY'));
+              setTaskDate(moment().format('DD/MM/YYYY'));
             }}
           >
             <span>
@@ -21,7 +21,7 @@ export function TaskDate({ setTaskDate, showTaskDate, setShowTaskDate }) {
           <li
             onClick={() => {
               setShowTaskDate(false);
-              setTaskDate(moment().format('DD/MM/YYYY'));
+              setTaskDate(moment().add(1, 'day').format('DD/MM/YYYY'));
             }}
           >
             <span>

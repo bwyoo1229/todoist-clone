@@ -54,7 +54,7 @@ export function AddTask({
 
   return (
     <div
-      className={showQuickAddTask ? 'add-task add-task__overaly' : 'add-task'}
+      className={showQuickAddTask ? 'add-task add-task__overlay' : 'add-task'}
     >
       {showAddTaskMain && (
         <div
