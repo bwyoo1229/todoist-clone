@@ -7,6 +7,7 @@
 <br>
 [데모 플레이](https://bwyoo1229.github.io/todoist-clone/)
 <br>
+
 ## 스택
 
 | **프론트엔드** |  **데이터베이스**  | 
