@@ -4,6 +4,7 @@
 <br><br>
 
 > 우측 상단에 있는 피자 아이콘을 클릭해서 다크모드를 확인해보세요!
+
 [데모 플레이](https://bwyoo1229.github.io/todoist-clone/)
 <br>
 
